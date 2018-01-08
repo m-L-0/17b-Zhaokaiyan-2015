@@ -1,0 +1,3 @@
+model_checkpoint_path: "/home/artemis/\344\270\213\350\275\275/yanzheng/cnn/yanzhenma-29900"
+all_model_checkpoint_paths: "/home/artemis/\344\270\213\350\275\275/yanzheng/cnn/yanzhenma-29800"
+all_model_checkpoint_paths: "/home/artemis/\344\270\213\350\275\275/yanzheng/cnn/yanzhenma-29900"

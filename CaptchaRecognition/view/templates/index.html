@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>识别验证码</title> 
+
+</head>
+<body style="background-image: url('{{ url_for('.static', filename='s.jpg')}}')"  text-align:center>
+    <br>
+    <br>
+    <h1 align="center" style="color: white; font-family: '微软雅黑 Light'; font-size: 80px">欢迎使用</h1>
+    <div style="position: absolute;top:50%;left: 45%;margin-top: -20px;margin-left: -20px;">
+        {% import "bootstrap/wtf.html" as wtf %}
+        {{ wtf.quick_form(form) }}
+        <br>
+        <h4 style="color: white; font-family: '微软雅黑 Light';">解析结果： {% if result %}{{ result }}{% else %}请上传验证码图片{% endif %}</h4>
+    </div>
+
+</body>
+</html>
